@@ -1,0 +1,182 @@
+/*Responsividade*/
+
+@media (max-width: 475.98px) {
+
+	video.video {
+		position: absolute;
+		top: 2%;
+		left: 5%;
+		z-index: 0;
+		width: 90%;
+		height: 90%;
+		opacity: 0.9;
+		display: none;
+		align-content: center;
+
+	}
+
+	video.video2 {
+		position: absolute;
+		top: 10%;
+		left: 5%;
+		z-index: 0;
+		width: 90%;
+		height: 76%;
+		opacity: 0.8;
+		display: block;
+		align-content: center;
+		border-radius: 30px;
+
+
+	}
+
+	div#album {
+		position: absolute;
+		top: 2%;
+		left: 5%;	
+		z-index: 1;
+		width: 90%;
+		height: 90%;
+		display: flex;
+		align-items: center;
+		align-content: center;
+	}
+
+	div.espaçamento {
+		margin-left:  35px;
+	}
+
+	div.espaçamento2 {
+		margin-left:  12px;
+	}
+
+
+
+
+}
+
+@media (min-width: 475.99px) and (max-width: 575.98px) {
+
+	div#album {
+		position: absolute;
+		left: 11%;
+		display: none;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+	div#album {
+		position: absolute;
+		left: 11%;
+		display: none;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+	div#album {
+		position: absolute;
+		left: 20%;
+		display: none;
+	}
+}
+
+
+body {
+	background: url('../assets/bg10.jpg') no-repeat center;
+	background-color: #071918;
+	background-size: cover;
+	border: 4px double purple;
+
+}
+
+html, body, #main {
+	height: 100%;
+}
+
+@font-face {
+	src: url('../fonts/boate.woff');
+	font-family: 'boate';
+}
+
+@font-face {
+	src: url('../fonts/boate2.woff');
+	font-family: 'boate2';
+}
+
+#login, #album {
+	position: absolute;
+	display: none;
+}
+
+.espaçamento {
+	margin-left:  0;
+}
+
+.espaçamento2 {
+	margin-left:  0;
+}
+
+
+.video {
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	z-index: 0;
+	width: 90%;
+	height: 90%;
+	opacity: 0.8;
+	
+	align-content: center;
+	display: flex;
+	align-items: center;
+}
+
+.video2 {
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	z-index: 0;
+	width: 90%;
+	height: 90%;
+	opacity: 0.8;
+	display: none;
+	
+}
+
+#album {
+	position: absolute;
+	top: 5%;
+	left: 5%;	
+	z-index: 1;
+	width: 90%;
+	height: 90%;
+	display: flex;
+	align-items: center;
+}
+
+.titulo, .titulo2 {
+	font-size: 1em;
+	text-shadow: 0 0 1em purple;
+	font-family: boate2;
+}
+
+.titulo, .titulo2, .atração, .t-atração {
+	font-weight: bold;
+}
+
+.titulo {
+	font-family: boate2;
+}
+
+.t-atração {
+	font-size: 1em;
+	font-family: boate2;
+}
+
+.atração {
+	font-family: boate2;
+}
+
+
