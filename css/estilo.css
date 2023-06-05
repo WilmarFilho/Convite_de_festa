@@ -2,37 +2,31 @@
 
 @media (max-width: 475.98px) {
 
-	video.video {
+	video.video, .video2 {
 		position: absolute;
-		top: 2%;
 		left: 5%;
 		z-index: 0;
 		width: 90%;
-		height: 90%;
 		opacity: 0.9;
-		display: none;
 		align-content: center;
+		border-radius: 30px;
+	}
 
+	video.video {
+		top: 2%;
+		height: 90%;
+		display: none;
 	}
 
 	video.video2 {
-		position: absolute;
-		top: 10%;
-		left: 5%;
-		z-index: 0;
-		width: 90%;
+		top: 8%;
 		height: 76%;
-		opacity: 0.8;
 		display: block;
-		align-content: center;
-		border-radius: 30px;
-
-
 	}
 
 	div#album {
 		position: absolute;
-		top: 2%;
+		top: 0%;
 		left: 5%;	
 		z-index: 1;
 		width: 90%;
@@ -42,43 +36,152 @@
 		align-content: center;
 	}
 
-	div.espaçamento {
+	div.centraliza {
+		margin-right:  0;
+		width: 100%;	
 		margin-left:  35px;
 	}
-
-	div.espaçamento2 {
-		margin-left:  12px;
-	}
-
-
-
 
 }
 
 @media (min-width: 475.99px) and (max-width: 575.98px) {
 
+	video.video, .video2 {
+		position: absolute;
+		left: 5%;
+		z-index: 0;
+		width: 90%;
+		opacity: 0.9;
+		align-content: center;
+		border-radius: 30px;
+	}
+
+	video.video {
+		top: 2%;
+		height: 90%;
+		display: none;
+	}
+
+	video.video2 {
+		top: 8%;
+		height: 76%;
+		display: block;
+	}
+
 	div#album {
 		position: absolute;
-		left: 11%;
-		display: none;
+		top: 0%;
+		left: 5%;	
+		z-index: 1;
+		width: 90%;
+		height: 90%;
+		display: flex;
+		align-items: center;
+		align-content: center;
+	}
+
+	div.centraliza {
+		margin-right:  0;
+		width: 100%;	
+		margin-left:  35px;
 	}
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
 
+	video.video, .video2 {
+		position: absolute;
+		left: 5%;
+		z-index: 0;
+		width: 90%;
+		opacity: 0.9;
+		align-content: center;
+		border-radius: 30px;
+	}
+
+	video.video {
+		/*top: 2%;
+		height: 90%;
+		display: none;*/
+		top: 8%;
+		height: 76%;
+		display: block;
+	}
+
+	video.video2 {
+		/*top: 8%;
+		height: 76%;
+		display: block;*/
+		top: 2%;
+		height: 90%;
+		display: none;
+	}
+
 	div#album {
 		position: absolute;
-		left: 11%;
-		display: none;
+		top: 0%;
+		left: 5%;	
+		z-index: 1;
+		width: 90%;
+		height: 90%;
+		display: flex;
+		align-items: center;
+		align-content: center;
+	}
+
+	div.centraliza {
+		margin-right:  0;
+		width: 100%;	
+		margin-left:  35px;
 	}
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
 
+	video.video, .video2 {
+		position: absolute;
+		left: 5%;
+		z-index: 0;
+		width: 90%;
+		opacity: 0.9;
+		align-content: center;
+		border-radius: 30px;
+	}
+
+	video.video {
+		/*top: 2%;
+		height: 90%;
+		display: none;*/
+		top: 8%;
+		height: 76%;
+		display: block;
+	}
+
+	video.video2 {
+		/*top: 8%;
+		height: 76%;
+		display: block;*/
+		top: 2%;
+		height: 90%;
+		display: none;
+	}
+
 	div#album {
 		position: absolute;
-		left: 20%;
-		display: none;
+		top: 0%;
+		left: 5%;	
+		z-index: 1;
+		width: 90%;
+		height: 90%;
+		display: flex;
+		align-items: center;
+		align-content: center;
+	}
+
+	div.centraliza {
+		margin-right:  0;
+		width: 100%;	
+		margin-left:  35px;
 	}
 }
 
@@ -88,38 +191,15 @@ body {
 	background-color: #071918;
 	background-size: cover;
 	border: 4px double purple;
-
+	font-family: boate2;
 }
 
 html, body, #main {
 	height: 100%;
 }
 
-@font-face {
-	src: url('../fonts/boate.woff');
-	font-family: 'boate';
-}
 
-@font-face {
-	src: url('../fonts/boate2.woff');
-	font-family: 'boate2';
-}
-
-#login, #album {
-	position: absolute;
-	display: none;
-}
-
-.espaçamento {
-	margin-left:  0;
-}
-
-.espaçamento2 {
-	margin-left:  0;
-}
-
-
-.video {
+.video, .video2 {
 	position: absolute;
 	top: 5%;
 	left: 5%;
@@ -127,22 +207,22 @@ html, body, #main {
 	width: 90%;
 	height: 90%;
 	opacity: 0.8;
-	
+	border-radius: 30px;
+}
+
+.video {
 	align-content: center;
 	display: flex;
 	align-items: center;
 }
 
 .video2 {
-	position: absolute;
-	top: 5%;
-	left: 5%;
-	z-index: 0;
-	width: 90%;
-	height: 90%;
-	opacity: 0.8;
 	display: none;
-	
+}
+
+@font-face {
+	src: url('../fonts/boate2.woff');
+	font-family: 'boate2';
 }
 
 #album {
@@ -156,27 +236,64 @@ html, body, #main {
 	align-items: center;
 }
 
-.titulo, .titulo2 {
-	font-size: 1em;
+.centraliza {
+	margin-left:  auto;
+	margin-right:  auto;
+	width: 50%;
+}
+
+.convite, .carrosel {
 	text-shadow: 0 0 1em purple;
-	font-family: boate2;
+	border-radius: 15px;
+	padding: 10px;
 }
 
-.titulo, .titulo2, .atração, .t-atração {
-	font-weight: bold;
+.carrosel {
+	background-color: rgb(0, 0, 0, .3);
 }
 
-.titulo {
-	font-family: boate2;
-}
-
-.t-atração {
+.ciano, .convite, .atração {
 	font-size: 1em;
-	font-family: boate2;
+	font-weight: bolder;
 }
 
-.atração {
+.ciano {
+	text-shadow: 0 0 1em cyan;
+}
+
+.label-form {
+	font-size: 0.8em;
+	font-weight: bolder;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #382347;
+    border-color: #b062e3;
+    font-family: boate2;
+}
+
+.rodape {
+	position: absolute;
+	top: 100%;
+	padding-top: 10px;
+	background: rgba(0, 0, 0, .8);
+	border-radius: 20px;
+	width: 100%;
+	margin-left: 3%;
 	font-family: boate2;
+	font-size: 0.85em;
+
+}
+
+.form-control {
+	background-color: rgb(0,0,0,.7);
 }
 
 
+.alert-info {
+    color: #ffffff;
+    background-color: #382347;
+    border-color: #bee5eb;
+    font-size: 0.7em;
+}
